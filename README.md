@@ -1,6 +1,6 @@
 # RustPractice
 
-In lieu of the White House announcement of **TRACTOR**(https://www.darpa.mil/research/programs/translating-all-c-to-rust), I am future-proofing my skills. I am focusing on low-level applications, and this repository exists to host my fundamentals as I learn Rust and explore its nuances.
+In lieu of the White House announcement of [**TRACTOR**](https://www.darpa.mil/research/programs/translating-all-c-to-rust), I am future-proofing my skills. I am focusing on low-level applications, and this repository exists to host my fundamentals as I learn Rust and explore its nuances.
 
 ## Repository Purpose
 
