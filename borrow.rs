@@ -11,7 +11,24 @@
 //// Mutable References -- Borrowing without modification + modify data
 // Create Reference by using the "&"
 
+struct BankAccount {
+  owner: String,
+  balance: f32,
+
+}
+
+// We cannot have simultaneous mutable accesss to the account
+// to update the balance and immutable access for reading owner name 
 impl BankAccount{
+  fn withdraw(&mut self, amount: f32){
+    println!("Withdrawing {} from account owned by {}", amount, self.owner);
+    self.balance -= amount;
+  }
+
+  fn check_balance(&self){
+    println!("Accoutn owned by {} has a balance of {}", self.owner, self.balance);
+  }
+}
 fn main(){
   // Immutable Referenes 
   let x:u8 = 5;
@@ -32,6 +49,20 @@ fn main(){
   println!("Value of p: {}", p);
 
   println!("Value of y: {}", y);
+
+  let mut account = BankAccount{
+    owner: "Alice".to_string(),
+    balance: 300.68
+  };
+
+  // Imutable borrow to check balance
+  account.check_balance();
+
+  // Mutable borrow to withdraw
+  account.withdraw(100.25);
+
+  account.check_balance();
+
 }
 
 // You can only have one mutable refernce for a single variable
