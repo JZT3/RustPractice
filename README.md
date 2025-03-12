@@ -10,4 +10,4 @@ This repository is dedicated to:
 
 - Hosting code snippets, exercises, and projects that illustrate fundamental concepts and advanced features of Rust.
 
-- Serving as a personal reference and potentially aiding others who are also movign from C/C++ into Rust programming.
+- Serving as a personal reference and potentially aiding others who are also moving from C/C++ into Rust programming.
