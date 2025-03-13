@@ -36,7 +36,7 @@ fn main(){
   vec4.push(4);
   vec4.push(6);
 
-  let vec5: Vec<i32> = vec![3,2,1];
+  let mut vec5: Vec<i32> = vec![3,2,1];
   vec5.shrink_to_fit();
 
 }
