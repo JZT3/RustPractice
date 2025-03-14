@@ -9,7 +9,8 @@ fn main(){
   let last_item = vec.pop();
   println!("My Vector: {:?}", vec);
 
-  let first_item = vec.get(0);
+  let first_item = vec.get(0); /// A safe operation and doesnt panic at runtime 
+                              /// If we accidently go outside the bounds of array(Returns an option type)
   println!("My Vector: {:?}", first_item);
 
   let mut_item = vec.get_mut(1);
