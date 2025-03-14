@@ -43,7 +43,6 @@ fn quicksort(mut arr: Vec<i32>) -> Vec<i32> {
       }
   }
 
-  sorted.sort(); // Since pivots are added in order, sort once at the end
   sorted
 }
 
